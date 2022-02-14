@@ -1,9 +1,9 @@
 package main
 
 import (
-    "github.com/leandrocunha526/moechat/app"
+	"github.com/leandrocunha526/futa/app/src/app"
 )
 
 func main() {
-    app.Run()
+	app.Run()
 }

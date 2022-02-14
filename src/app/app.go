@@ -5,8 +5,8 @@ import (
 	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/gofiber/fiber/v2/middleware/logger"
 	"github.com/gofiber/fiber/v2/middleware/recover"
-	"github.com/leandrocunha526/moechat/app/user"
-	"github.com/leandrocunha526/moechat/app/user/events/ws"
+	"github.com/leandrocunha526/futa/app/src/app/user"
+	"github.com/leandrocunha526/futa/app/user/events/ws"
 )
 
 func Run() {
@@ -25,5 +25,5 @@ func Run() {
 		return c.JSON("hello")
 	})
 
-	app.Listen(":3005")
+	app.Listen(":5000")
 }
