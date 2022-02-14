@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"github.com/dgrijalva/jwt-go"
 	"github.com/gofiber/fiber/v2"
-	config2 "github.com/leandrocunha526/futa/app/src/app/config"
-	"github.com/leandrocunha526/futa/app/src/model/api"
+	config2 "github.com/leandrocunha526/futa/app/config"
+	"github.com/leandrocunha526/futa/model/api"
 	"strings"
 )
 
@@ -30,11 +30,9 @@ func JWTAuth(c *fiber.Ctx) error {
 	}
 
 	token, err := jwt.Parse(tokenString, func(token *jwt.Token) (interface{}, error) {
-		if method, ok := token.Method.(*jwt.SigningMethodHMAC);
-			!ok {
+		if method, ok := token.Method.(*jwt.SigningMethodHMAC); !ok {
 			return nil, fmt.Errorf("signing method invalid")
-		} else if
-		method != jwt.SigningMethodHS256 {
+		} else if method != jwt.SigningMethodHS256 {
 			return nil, fmt.Errorf("signing method invalid")
 		}
 		return []byte(config.JwtSecretKey), nil

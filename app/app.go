@@ -5,7 +5,7 @@ import (
 	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/gofiber/fiber/v2/middleware/logger"
 	"github.com/gofiber/fiber/v2/middleware/recover"
-	"github.com/leandrocunha526/futa/app/src/app/user"
+	"github.com/leandrocunha526/futa/app/user"
 	"github.com/leandrocunha526/futa/app/user/events/ws"
 )
 

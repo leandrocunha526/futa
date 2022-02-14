@@ -1,4 +1,4 @@
-module github.com/leandrocunha526/futa/app
+module github.com/leandrocunha526/futa
 
 go 1.17
 

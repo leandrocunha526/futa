@@ -3,7 +3,7 @@ package app
 import (
 	"database/sql"
 	"fmt"
-	config2 "github.com/leandrocunha526/futa/app/src/app/config"
+	config2 "github.com/leandrocunha526/futa/app/config"
 	_ "github.com/lib/pq"
 	"log"
 )
