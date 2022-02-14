@@ -27,7 +27,7 @@ var (
 	JwtAccessTokenExpired = time.Duration(30) * (time.Hour * 24)
 )
 
-func Service(ctx context.Context, db *sql.DB, request api.LoginRequest) *api.LoginResponse {
+func Service(ctx context.Context, db *sql.DB, request api.LoginResponse) *api.LoginResponse {
 
 	tx, err := db.Begin()
 	helper.PanicError(err)

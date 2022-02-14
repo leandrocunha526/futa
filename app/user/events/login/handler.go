@@ -13,6 +13,6 @@ func Handler(c *fiber.Ctx, db *sql.DB) error {
 	if err := c.BodyParser(user); err != nil {
 		panic(err)
 	}
-	Service(ctx, db, *user)
+	res := Service(ctx, db, *user)
 	return c.JSON(res)
 }

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/leandrocunha526/futa/app/src/app"
+	"github.com/leandrocunha526/futa/app"
 )
 
 func main() {
