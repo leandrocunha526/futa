@@ -9,7 +9,7 @@ import (
 
 func Handler(c *fiber.Ctx, db *sql.DB) error {
 	ctx := context.Background()
-	user := new(api.LoginResponse)
+	user := new(api.LoginRequest)
 	if err := c.BodyParser(user); err != nil {
 		panic(err)
 	}

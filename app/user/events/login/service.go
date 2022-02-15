@@ -4,10 +4,10 @@ import (
 	"context"
 	"database/sql"
 	"fmt"
+	"github.com/dgrijalva/jwt-go"
 	"strings"
 	"time"
 
-	"github.com/dgrijalva/jwt-go"
 	config2 "github.com/leandrocunha526/futa/app/config"
 	"github.com/leandrocunha526/futa/app/helper"
 	"github.com/leandrocunha526/futa/model/api"
@@ -27,7 +27,7 @@ var (
 	JwtAccessTokenExpired = time.Duration(30) * (time.Hour * 24)
 )
 
-func Service(ctx context.Context, db *sql.DB, request api.LoginResponse) *api.LoginResponse {
+func Service(ctx context.Context, db *sql.DB, request api.LoginRequest) *api.LoginResponse {
 
 	tx, err := db.Begin()
 	helper.PanicError(err)
