@@ -15,8 +15,8 @@ Fiber is an Express inspired web framework built on top of Fasthttp, the fastest
 - Fiber
 - JWT
 - Viper
-- More see (go.mod)[go.mod]
+- More see [go.mod](go.mod)
 
 # LICENSE
 
-See (LICENSE.md)[LICENSE.md]
+See [LICENSE.md](LICENSE.md)
