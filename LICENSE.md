@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2019-present Fenny and Contributors
+Copyright (c) 2019-present Fenny and Contributors  
 Copyright (c) 2022         Leandro Cunha <leandrocunha016@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
