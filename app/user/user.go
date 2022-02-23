@@ -2,6 +2,7 @@ package user
 
 import (
 	"database/sql"
+
 	"github.com/gofiber/fiber/v2"
 	"github.com/leandrocunha526/futa/app/middleware"
 	"github.com/leandrocunha526/futa/app/user/events/login"
