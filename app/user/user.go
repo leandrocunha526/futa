@@ -33,6 +33,6 @@ func Init(app *fiber.App, db *sql.DB) {
 	})
 
 	app.Get("/ws", func(c *fiber.Ctx) error {
-		return handler.GetAvailableRoom(c, hub)
+		return handler.GetAvailableRooms(c, hub)
 	})
 }
