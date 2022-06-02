@@ -23,7 +23,7 @@ func LoadConfig() (config Config, err error) {
 	} else {
 		viper.SetConfigFile("env-dev")
 	}
-	viper.SetConfigFile("env")
+	viper.SetConfigFile(".env")
 	viper.AutomaticEnv()
 
 	err = viper.ReadInConfig()
