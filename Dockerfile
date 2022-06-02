@@ -1,9 +1,12 @@
-FROM golang:1.17-bookworm
+# To versions and releases see https://hub.docker.com/_/golang
+FROM golang:alpine
 
-WORKDIR /src
-COPY . .
+WORKDIR /app
 
-RUN go get -d -v ./...
-RUN go install -v ./...
+COPY env-dev.env ./
+COPY futa ./
+RUN chmod +x ./futa
 
-CMD ["app"]
+EXPOSE 3005
+
+CMD [ "././futa" ]

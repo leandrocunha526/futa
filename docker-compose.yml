@@ -1,7 +1,7 @@
 version : "2.4"
 services:
   postgre:
-    container_name: postgre
+    container_name: postgres
     image: postgres:alpine
     ports:
       - 5432:5432
@@ -13,4 +13,4 @@ services:
       - POSTGRES_DB=${DBNAME} 
 networks:
   moechat-network:
-    name : moehchat-network
+    name : moechat-network
